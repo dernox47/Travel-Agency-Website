@@ -84,21 +84,21 @@ a:nth-child(1):hover~.animation {
     background-color: #1585cf;
 }
 
-nav .start-second,
+nav .start-balaton,
 a:nth-child(2):hover~.animation {
     width: 200px;
     left: 200px;
     background-color: #399ac0;
 }
 
-nav .start-third,
+nav .start-london,
 a:nth-child(3):hover~.animation {
     width: 200px;
     left: 400px;
     background-color: #51a8c2;
 }
 
-nav .start-end,
+nav .start-kuala,
 a:nth-child(4):hover~.animation {
     width: 200px;
     left: 600px;
@@ -123,6 +123,7 @@ body {
 main p {
     font-size: 20px;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    text-align: justify;
 }
 
 main h2 {
@@ -142,10 +143,21 @@ main h2 {
 
 /*--------------------------------------Subpages-----------------------------------------*/
 
+.subpage-body h1 {
+    background-color: #5b758da6;
+    margin: 50px auto;
+    width: 60vh;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.5);
+}
+
 .nav2_0 {
     margin: 0 auto;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.5);
+    background-color: #5b758dec;
 }
 
 .nav2_0 .animation {
@@ -156,7 +168,33 @@ main h2 {
 .subpage-body>header>.container-fluid {
     width: 100%;
     height: 300px;
-    background-color: #b4618e;
+    border-bottom: 4px solid black;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+#p2_bg {
+    background-image: url(images/balaton.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#p3_bg {
+    background-image: url(images/waldorfháttér.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#p4_bg {
+    background-image: url(images/malaysiaháttér.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#p4_bg h1 {
+    width: 80vh;
 }
 
 .subpage-body {
@@ -164,6 +202,96 @@ main h2 {
     background-image: linear-gradient(to bottom right, #8d416d, #589cd1, #cae4f5, #b4618e, #f1c5ca);
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+
+/*--------------Image-block-------------------*/
+
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    border-radius: 20px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #e4b7ba;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 
@@ -195,6 +323,10 @@ footer p {
 
 
 /*----------------------Responsive------------------------------*/
+
+.short-text {
+    display: none;
+}
 
 @media screen and (max-width: 992px) {
     html {
@@ -229,17 +361,17 @@ footer p {
         width: 160px;
         left: 0;
     }
-    nav .start-second,
+    nav .start-balaton,
     a:nth-child(2):hover~.animation {
         width: 160px;
         left: 160px;
     }
-    nav .start-third,
+    nav .start-london,
     a:nth-child(3):hover~.animation {
         width: 160px;
         left: 320px;
     }
-    nav .start-end,
+    nav .start-kuala,
     a:nth-child(4):hover~.animation {
         width: 160px;
         left: 480px;
@@ -249,6 +381,12 @@ footer p {
 @media screen and (max-width: 768px) {
     nav {
         width: 400px;
+    }
+    .country[data-abbr]::after {
+        content: attr(data-abbr);
+    }
+    .country>span {
+        display: none;
     }
     a:nth-child(1) {
         width: 100px;
@@ -267,19 +405,27 @@ footer p {
         width: 100px;
         left: 0;
     }
-    nav .start-second,
+    nav .start-balaton,
     a:nth-child(2):hover~.animation {
         width: 100px;
         left: 100px;
     }
-    nav .start-third,
+    nav .start-london,
     a:nth-child(3):hover~.animation {
         width: 100px;
         left: 200px;
     }
-    nav .start-end,
+    nav .start-kuala,
     a:nth-child(4):hover~.animation {
         width: 100px;
         left: 300px;
+    }
+    .subpage-body h1 {
+        width: 40vh;
+        font-size: 60px;
+    }
+    #p4_bg h1 {
+        width: 40vh;
+        font-size: 50px;
     }
 }

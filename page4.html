@@ -12,20 +12,66 @@
     <link rel="stylesheet" href="print.css" media="print">
 </head>
 
-<body>
-    <header class="container">
-        <nav class="nav2_0">
-            <a href="index.html">Home</a></li>
-            <a href="page2.html">About</a></li>
-            <a href="page3.html">Work</a></li>
-            <a href="page4.html">Work</a></li>
-            <div class="animation start-home"></div>
-        </nav>
+<body class="subpage-body">
+    <header>
+        <div class="container-fluid" id="p4_bg">
+            <nav class="nav2_0">
+                <a href="index.html">Home</a></li>
+                <a href="page2.html" class="country" data-abbr="Magyaro."><span>Magyarország</span></a></li>>
+                <a href="page3.html">Anglia</a></li>
+                <a href="page4.html">Malaysia</a></li>
+                <div class="animation start-kuala"></div>
+            </nav>
+            <h1>Kuala Lumpur</h1>
+        </div>
     </header>
-    <footer class="container-fluid">
+    <main class="container">
+        <div class="mid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="images/malaysia (3).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/malaysia4.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/malaysia.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/malaysia (2).jpg" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Szálláscím</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate. Habitasse platea dictumst quisque sagittis purus. Proin libero nunc
+                        consequat interdum varius. Eget sit amet tellus cras adipiscing enim eu turpis. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class=" container-fluid ">
         <h3>L-Trans</h3>
         <p>example@email.com<br> 401 That Street, 4th Floor<br> 06 10 203 0405</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
