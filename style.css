@@ -126,6 +126,11 @@ main p {
     text-align: justify;
 }
 
+#first_main {
+    line-height: 40px;
+    margin-bottom: 70px;
+}
+
 main h2 {
     font-size: 35px;
     margin-bottom: 20px;
@@ -140,11 +145,15 @@ main h2 {
     margin: 50px auto;
 }
 
+#first_mid {
+    background-color: #5b758dc2;
+}
+
 
 /*--------------------------------------Subpages-----------------------------------------*/
 
 .subpage-body h1 {
-    background-color: #5b758da6;
+    background-color: #5b758db7;
     margin: 50px auto;
     width: 60vh;
     padding: 20px;
@@ -157,7 +166,7 @@ main h2 {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 3px 8px 5px rgba(0, 0, 0, 0.5);
-    background-color: #5b758dec;
+    background-color: #5b758dea;
 }
 
 .nav2_0 .animation {
