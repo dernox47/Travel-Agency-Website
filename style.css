@@ -81,25 +81,101 @@ a:nth-child(1):hover~.animation {
     background-color: #1585cf;
 }
 
-nav .start-about,
+nav .start-second,
 a:nth-child(2):hover~.animation {
     width: 200px;
     left: 200px;
     background-color: #399ac0;
 }
 
-nav .start-blog,
+nav .start-third,
 a:nth-child(3):hover~.animation {
     width: 200px;
     left: 400px;
     background-color: #51a8c2;
 }
 
-nav .start-blog,
+nav .start-end,
 a:nth-child(4):hover~.animation {
     width: 200px;
     left: 600px;
     background-color: #5bb9b9;
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        width: 640px;
+    }
+    a:nth-child(1) {
+        width: 160px;
+    }
+    a:nth-child(2) {
+        width: 160px;
+    }
+    a:nth-child(3) {
+        width: 160px;
+    }
+    a:nth-child(4) {
+        width: 160px;
+    }
+    nav .start-home,
+    a:nth-child(1):hover~.animation {
+        width: 160px;
+        left: 0;
+    }
+    nav .start-second,
+    a:nth-child(2):hover~.animation {
+        width: 160px;
+        left: 160px;
+    }
+    nav .start-third,
+    a:nth-child(3):hover~.animation {
+        width: 160px;
+        left: 320px;
+    }
+    nav .start-end,
+    a:nth-child(4):hover~.animation {
+        width: 160px;
+        left: 480px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 400px;
+    }
+    a:nth-child(1) {
+        width: 100px;
+    }
+    a:nth-child(2) {
+        width: 100px;
+    }
+    a:nth-child(3) {
+        width: 100px;
+    }
+    a:nth-child(4) {
+        width: 100px;
+    }
+    nav .start-home,
+    a:nth-child(1):hover~.animation {
+        width: 100px;
+        left: 0;
+    }
+    nav .start-second,
+    a:nth-child(2):hover~.animation {
+        width: 100px;
+        left: 100px;
+    }
+    nav .start-third,
+    a:nth-child(3):hover~.animation {
+        width: 100px;
+        left: 200px;
+    }
+    nav .start-end,
+    a:nth-child(4):hover~.animation {
+        width: 100px;
+        left: 300px;
+    }
 }
 
 
