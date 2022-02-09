@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 /*-----------------------Banner-----------------------*/
 
@@ -15,6 +15,10 @@ h1 {
 h2 {
     text-align: center;
     font-size: 40px;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -121,8 +125,8 @@ body {
 }
 
 main p {
-    font-size: 20px;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: justify;
 }
 
@@ -132,9 +136,9 @@ main p {
 }
 
 main h2 {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 20px;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
 }
 
@@ -151,6 +155,9 @@ main h2 {
 
 
 /*--------------------------------------Subpages-----------------------------------------*/
+
+
+/*------------------Banner----------------*/
 
 .subpage-body h1 {
     background-color: #5b758db7;
@@ -206,6 +213,9 @@ main h2 {
     width: 80vh;
 }
 
+
+/*-------------Background-------------------*/
+
 .subpage-body {
     background-color: #8d416d;
     background-image: linear-gradient(to bottom right, #8d416d, #589cd1, #cae4f5, #b4618e, #f1c5ca);
@@ -214,7 +224,7 @@ main h2 {
 }
 
 
-/*--------------Image-block-------------------*/
+/*------------Image-block----------------*/
 
 * {
     box-sizing: border-box
@@ -301,6 +311,42 @@ main h2 {
     to {
         opacity: 1
     }
+}
+
+
+/*-----------InputInterface-------------*/
+
+.dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(images/circle-chevron-down-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 20px;
+    width: 100px;
+    height: 50px;
+    padding-left: 35px;
+    font-size: 18px;
+    font-family: Paprika;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.651);
+    margin-bottom: 30px;
+}
+
+.dropdown option {
+    font-size: 12px;
+}
+
+#sum {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+button {
+    display: block;
+    margin: auto;
 }
 
 
