@@ -54,3 +54,19 @@ function myFunction_1() {
     var sum = night * member * price;
     document.getElementById("sum").innerHTML = 'Ár: ' + localeString(sum) + 'Ft';
 }
+
+function myFunction_2() {
+    const price = 92000;
+    const night = document.getElementById("night").value;
+    const member = document.getElementById("member").value;
+    var sum = night * member * price;
+    document.getElementById("sum").innerHTML = 'Ár: ' + localeString(sum) + 'Ft';
+}
+
+function myFunction_3() {
+    const price = 10900;
+    const night = document.getElementById("night").value;
+    const member = document.getElementById("member").value;
+    var sum = night * member * price;
+    document.getElementById("sum").innerHTML = 'Ár: ' + localeString(sum) + 'Ft';
+}
