@@ -246,6 +246,7 @@ main h2 {
 
 .prev,
 .next {
+    text-decoration: none;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -269,6 +270,7 @@ main h2 {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
+    color: #e4b7ba
 }
 
 .dot {
@@ -316,6 +318,11 @@ main h2 {
 
 /*-----------InputInterface-------------*/
 
+#price {
+    font-size: 30px;
+    margin: 20px;
+}
+
 .dropdown {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -328,6 +335,7 @@ main h2 {
     padding-left: 35px;
     font-size: 18px;
     font-family: Paprika;
+    border: 1px solid black;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.651);
     margin-bottom: 30px;
@@ -347,6 +355,23 @@ main h2 {
 button {
     display: block;
     margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.651);
+    font-family: Paprika;
+    font-size: 16px;
+}
+
+.dropdown:hover,
+button:hover {
+    background-color: #ffced2a9;
+    cursor: pointer;
+}
+
+select.dropdown option:hover {
+    box-shadow: 0 0 10px 100px #fff inset;
 }
 
 
@@ -430,6 +455,11 @@ footer p {
     a:nth-child(4):hover~.animation {
         width: 160px;
         left: 480px;
+    }
+    #price {
+        font-size: 30px;
+        margin: 20px;
+        text-align: center;
     }
 }
 
