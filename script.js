@@ -2,12 +2,10 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -34,8 +32,8 @@ function localeString(x, sep, grp) {
     var sx = ('' + x).split('.'),
         s = '',
         i, j;
-    sep || (sep = ' '); // default seperator
-    grp || grp === 0 || (grp = 3); // default grouping
+    sep || (sep = ' ');
+    grp || grp === 0 || (grp = 3);
     i = sx[0].length;
     while (i > grp) {
         j = i - grp;
